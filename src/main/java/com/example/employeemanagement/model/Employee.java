@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
-@RequiredArgsConstructor
+
 @Entity
 @Table(name = "employees")
 public class Employee {
@@ -23,6 +23,15 @@ public class Employee {
 		super();
 	}
 	
+	
+	public Employee(String firstName, String lastName, String email) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+	}
+
+
 	/**
 	 * @return the id
 	 */
