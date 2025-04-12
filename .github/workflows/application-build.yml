@@ -14,4 +14,4 @@ jobs:
       - name: Run the Unit test cases
         run: echo "Running Unit test cases"
       - name: "owasp dependnecy Check"
-        run: "Running Owasp Dependecy Check"
+        run: echo "Running Owasp Dependecy Check"
