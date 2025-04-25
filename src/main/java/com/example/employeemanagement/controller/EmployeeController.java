@@ -14,7 +14,7 @@ import java.util.List;
 @CrossOrigin(origins = "http://localhost:3000")
 public class EmployeeController {
 
-	@Autowired
+	@Autowired 
 	private EmployeeService employeeService;
 
 	@GetMapping

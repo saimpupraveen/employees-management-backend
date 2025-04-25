@@ -1,5 +1,7 @@
 package com.example.employeemanagement.model;
 
+import java.io.Serializable;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,7 +12,8 @@ import lombok.Setter;
 
 @Entity
 @Table(name = "employees")
-public class Employee {
+public class Employee implements Serializable{
+    private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
