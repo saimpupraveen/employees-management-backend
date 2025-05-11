@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-alpine
 WORKDIR /app
 
 # Copy the built JAR file into the image
-COPY target/*.jar app.jar
+COPY target/*.war app.war
 
 # Expose the port your app runs on
 EXPOSE 8080
